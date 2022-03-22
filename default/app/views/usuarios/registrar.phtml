@@ -1,0 +1,36 @@
+<div class="row">
+    <?php echo form::open('usuarios/guardar','Post', 'class="col s12"'); ?>
+    <div class="row">
+        <div class="input-field col s6">
+            <?php echo form::text('usuarios.nombres'); ?>
+            <?php echo form::label('Nombres','nombres') ?>
+        </div>
+        <div class="input-field col s6">
+            <?php echo form::text('usuarios.apellidos'); ?>
+            <?php echo form::label('Apellidos','apellidos'); ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+            <?php echo form::text('usuarios.telefono'); ?>
+            <?php echo form::label('Telefono','telefono'); ?>
+        </div>
+        <div class="input-field col s6">
+            <?php echo form::text('usuarios.email'); ?>
+            <?php echo form::label('Email','email'); ?>
+        </div>
+        <div class="input-field col s6">
+            <?php echo form::text('usuarios.dui'); ?>
+            <?php echo form::label('Dui','dui'); ?>
+        </div>
+        <div class="input-field col s6">
+            <?php echo form::date('usuarios.fecha_de_nacimiento'); ?>
+            <?php echo form::label('Fecha','fecha_de_nacimiento'); ?>
+        </div>
+        <div class="row">
+            <?php echo form::submit('Guardar', 'class="btn indigo darken-4"'); ?>
+            <?php echo form::reset('Limpiar','class="btn pink"'); ?>
+        </div>
+    </div>
+    <?php echo Form::close() ?>
+</div>
